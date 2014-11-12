@@ -1,0 +1,2 @@
+VARIABLE1=qwerty
+echo "My name is $VARIABLE1"

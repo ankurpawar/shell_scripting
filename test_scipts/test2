@@ -1,0 +1,4 @@
+VAR1=cool
+VAR2="this system runs"
+echo -n "$VAR1 $VAR2"
+uname
