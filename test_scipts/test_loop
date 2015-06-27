@@ -1,0 +1,20 @@
+#!/bin/bash
+#test for loop
+
+arr[0]=123
+arr[1]=156
+arr[2]=264
+arr[3]=325
+
+ar=$(ls -I "te*")
+echo "$ar"
+for val in ${arr}
+do
+	echo "$val"
+done
+
+for ((i=0 ; i<4 ; i++)) 
+do
+	echo "${arr[$i]}"
+done
+

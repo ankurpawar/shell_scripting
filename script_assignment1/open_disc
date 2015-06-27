@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#script to detect the cd
+#
+
+cdrom_path=/dev/cdrom
+
+if test '-L $cdrom_path'
+then 
+	echo "cdrom is present"
+else 
+	echo "cdrom is not present"
+	exit 1
+fi
+
+dev_entry=$(readlink $cdrom_path)
+echo "$dev_entry" 
+
+dev_entry2=/dev/$dev_entry
+echo "$dev_entry2"
+
+str=($(mount|grep $dev_entry2))
+cd_path=${str[2]}
+
+if [ "$cd_path" = "" ]
+then 
+	echo "cd not present"
+	exit 1
+else
+	echo "cd present at path $cd_path"
+fi

@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+
+#success=0
+success=(read)
+echo "$success"
+

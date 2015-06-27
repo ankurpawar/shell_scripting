@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#
+#
+
+var=make
+echo "$var"
+var2=${var}
+echo "$var2"

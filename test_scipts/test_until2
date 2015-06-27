@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#until example using arithmetic comparisons
+
+x=1
+until [ "$x" -eq 0 ]
+do
+	echo "enter a digit"
+	read x
+done
+
+echo "good bye"

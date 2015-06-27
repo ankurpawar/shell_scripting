@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#
+
+./open_disc
+if [ $? != 0 ]
+then
+	echo "disk not found"
+else
+	echo "disk found"
+fi
+
