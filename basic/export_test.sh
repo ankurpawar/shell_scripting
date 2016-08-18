@@ -5,4 +5,4 @@
 
 VAR1="hello"
 export VAR1
-sh test_echo  
+sh echo_test2.sh

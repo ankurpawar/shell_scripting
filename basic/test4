@@ -1,8 +1,0 @@
-#! /bin/bash
-#script to make array , insert and read value
-#
-
-array1[0]=1
-echo ${array1[0]}
-
-exit 0
